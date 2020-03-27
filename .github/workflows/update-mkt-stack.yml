@@ -20,13 +20,13 @@ jobs:
       name: Checkout Quickstart Repo
       with:
               ref: ImageListings
-    #- user: "oci-quickstart/oci-quickstart/partners/actions/create-dummy-image@v0.91"
+    #- user: "oci-quickstart/oci-quickstart/partners/actions/create-dummy-image@1cfe8cd"
     #  name: Create Dummy Image
-    - uses: "oci-quickstart/oci-quickstart/partners/actions/create-partner-image@v0.91"
+    - uses: "oci-quickstart/oci-quickstart/partners/actions/create-partner-image@1cfe8cd"
       name: Create Partner Marketplace-ready Image
       with:
         base-image: 'ocid1.image.oc1.iad.aaaaaaaavxqdkuyamlnrdo3q7qa7q3tsd6vnyrxjy3nmdbpv7fs7um53zh5q'
-    - uses: "oci-quickstart/oci-quickstart/partners/actions/update-listing@4933a02"
+    - uses: "oci-quickstart/oci-quickstart/partners/actions/update-listing@1cfe8cd"
       name: Update Marketplace Listing
       
       
