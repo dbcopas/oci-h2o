@@ -5,7 +5,7 @@ on:
 name: OCI-Marketplace
 jobs:
   test-terraform-code: 
-    name: Update Marketplace Stack Listing
+    name: Update Marketplace Image Listing
     runs-on: ubuntu-latest
     env:
       TF_VAR_compartment_ocid: ${{ secrets.TF_VAR_compartment_ocid }}
@@ -26,7 +26,7 @@ jobs:
       name: Create Partner Marketplace-ready Image
       with:
         base-image: 'ocid1.image.oc1.iad.aaaaaaaavxqdkuyamlnrdo3q7qa7q3tsd6vnyrxjy3nmdbpv7fs7um53zh5q'
-    - uses: "oci-quickstart/oci-quickstart/partners/actions/update-listing@f92e406"
+    - uses: "oci-quickstart/oci-quickstart/partners/actions/update-listing@4933a02"
       name: Update Marketplace Listing
       
       
